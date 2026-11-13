@@ -4,173 +4,147 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0f5f63" />
-    <meta name="description" content="Download Studywork for Windows or macOS. Offline-first TEKS practice for students in Grades 6–8." />
-    <title>Studywork — Focused TEKS practice for Grades 6–8</title>
+    <meta name="description" content="Studywork is a Windows app for Texas grades 6 to 8 practice. A parent locks the laptop to Studywork, and the student answers real TEKS questions." />
+    <title>Studywork: TEKS practice for grades 6 to 8</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="nav-wrap">
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Studywork home">
-          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
-            <rect width="64" height="64" rx="14" fill="#0f5f63" />
-            <rect x="29.2" y="7.5" width="5.6" height="9" rx="2.8" fill="#f4efe4" />
-            <path d="M18 31c0-11.4 6.4-19 14-19s14 7.6 14 19v9.5H18V31z" fill="#f4efe4" />
-            <rect x="14" y="38.5" width="36" height="7.5" rx="3.6" fill="#f4efe4" />
-            <path d="M27.2 46.2v-4.1a4.8 4.8 0 0 1 9.6 0v4.1" fill="none" stroke="#c45c26" stroke-width="2.6" stroke-linecap="round" />
-            <rect x="25.4" y="45.2" width="13.2" height="11.2" rx="2.4" fill="#c45c26" />
-            <circle cx="32" cy="50.4" r="1.5" fill="#f4efe4" />
-          </svg>
-          <span>Studywork</span>
-        </a>
-        <div class="nav-links">
-          <a href="#features">Features</a>
+    <header class="nav">
+      <div class="wrap">
+        <a class="brand" href="index.html"><img src="favicon.svg" alt="" width="34" height="34" /><span>Studywork</span></a>
+        <nav class="nav-links" aria-label="Page sections">
+          <a href="#lock">The lock</a>
+          <a href="#download">Download</a>
           <a href="#pricing">Pricing</a>
-          <a href="#privacy">Privacy</a>
-          <a class="nav-download" href="#download">Download</a>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero section-shell">
-        <div class="hero-copy">
-          <p class="eyebrow">TEKS practice · Grades 6–8</p>
-          <h1>Practice with purpose.<br /><span>Learn without distractions.</span></h1>
-          <p class="hero-lead">Studywork is a focused desktop learning app for Math, English Language Arts and Reading, Science, and Social Studies. It works offline, keeps each student's progress separate, and gives parents clear controls.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#download">Download Studywork</a>
-            <a class="button secondary" href="#how-it-works">See how it works</a>
-          </div>
-          <div class="hero-notes" aria-label="Product highlights">
-            <span>✓ Works offline</span>
-            <span>✓ No ads</span>
-            <span>✓ Parent-controlled</span>
-          </div>
-        </div>
-        <div class="product-preview" aria-label="Studywork product overview">
-          <div class="preview-topbar">
-            <span class="mini-brand"><i></i> Studywork</span>
-            <span class="lock-pill">Study Mode</span>
-          </div>
-          <div class="preview-body">
-            <p class="mini-label">GOOD AFTERNOON, STUDENT</p>
-            <h2>Ready to keep learning?</h2>
-            <div class="preview-progress">
-              <div><strong>12</strong><span>Skills practiced</span></div>
-              <div><strong>84%</strong><span>Accuracy</span></div>
-              <div><strong>3</strong><span>Mastered</span></div>
-            </div>
-            <div class="subject-row">
-              <article><b>Math</b><span>Ratios &amp; reasoning</span><i style="--progress:72%"></i></article>
-              <article><b>ELAR</b><span>Reading &amp; writing</span><i style="--progress:48%"></i></article>
-              <article><b>Science</b><span>Matter &amp; energy</span><i style="--progress:61%"></i></article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="download-band" id="download">
-        <div class="section-shell">
-          <div class="section-heading centered">
-            <p class="eyebrow">Studywork</p>
-            <h2>Choose your computer</h2>
-            <p>One download includes the complete Grades 6–8 curriculum and offline practice experience.</p>
-          </div>
-          <div class="download-grid">
-            <article class="download-card recommended">
-              <span class="recommended-label">Windows</span>
-              <div class="platform-icon" aria-hidden="true">⊞</div>
-              <h3>Studywork for Windows</h3>
-              <p>64-bit installer for Windows 10 and Windows 11. Includes desktop and Start Menu shortcuts.</p>
-              <a class="button primary full" href="https://github.com/krishngohel/Studywork-Website/releases/latest/download/Studywork-Setup-x64.exe">Download Windows installer</a>
-              <small>EXE · approximately 106 MB</small>
-            </article>
-            <article class="download-card">
-              <span class="recommended-label muted-label">macOS</span>
-              <div class="platform-icon apple" aria-hidden="true">●</div>
-              <h3>Studywork for Mac</h3>
-              <p>Universal app for Apple Silicon and Intel Macs running macOS 11 or newer.</p>
-              <a class="button primary full" href="https://github.com/krishngohel/Studywork-Website/releases/latest/download/Studywork-universal.dmg">Download Mac installer</a>
-              <small>DMG · approximately 219 MB · currently unsigned</small>
-            </article>
-          </div>
-          <p class="install-note"><b>Installation note:</b> Early releases may trigger an operating-system security warning because the installers are not yet code-signed. Only download Studywork from this page.</p>
-        </div>
-      </section>
-
-      <section class="section-shell feature-section" id="features">
-        <div class="section-heading">
-          <p class="eyebrow">Made for focused learning</p>
-          <h2>Everything students need.<br />Nothing they don't.</h2>
-        </div>
-        <div class="feature-grid">
-          <article><span>01</span><h3>Grades 6, 7, and 8</h3><p>Separate grade-level courses for Math, ELAR, Science, and Social Studies, organized around Texas Essential Knowledge and Skills.</p></article>
-          <article><span>02</span><h3>Practice that teaches</h3><p>A missed problem reveals a worked example using different values. Students learn the method, then solve the original skill themselves.</p></article>
-          <article><span>03</span><h3>Individual student profiles</h3><p>Each learner receives an independent grade assignment, mastery record, accuracy history, and study-session log.</p></article>
-          <article><span>04</span><h3>Parent dashboard</h3><p>A protected dashboard manages profiles, course tracks, progress, study time, cloud backup, and the parent PIN.</p></article>
-          <article><span>05</span><h3>Focused Study Mode</h3><p>Fullscreen kiosk controls discourage casual app switching while students practice. Windows Assigned Access can provide stronger device-level restriction.</p></article>
-          <article><span>06</span><h3>Optional cloud backup</h3><p>Supabase accounts can synchronize profiles and progress across installations. The learning experience remains available when the internet is unavailable.</p></article>
-        </div>
-      </section>
-
-      <section class="process-section" id="how-it-works">
-        <div class="section-shell process-grid">
-          <div class="section-heading">
-            <p class="eyebrow">A clear learning loop</p>
-            <h2>Understand, practice, master.</h2>
-            <p>Studywork rewards consistent understanding instead of one lucky answer.</p>
-          </div>
-          <ol class="steps">
-            <li><span>1</span><div><h3>Choose a subject and skill</h3><p>Students follow grade-level units or continue from their most recent lesson.</p></div></li>
-            <li><span>2</span><div><h3>Answer a fresh problem</h3><p>Large problem banks provide varied practice across each section.</p></div></li>
-            <li><span>3</span><div><h3>Learn from a similar example</h3><p>Incorrect answers show an explanation without revealing the answer to the student's problem.</p></div></li>
-            <li><span>4</span><div><h3>Build an eight-answer streak</h3><p>Eight correct answers in a row mark the skill as mastered.</p></div></li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section-shell privacy-section" id="privacy">
-        <div class="privacy-card">
+    <main>
+      <div class="wrap hero">
+        <h1>Practice for Texas grades 6 to 8, on a laptop that stays on task.</h1>
+        <div class="hero-row">
           <div>
-            <p class="eyebrow">Local-first by design</p>
-            <h2>Your learning data stays useful—even offline.</h2>
+            <p class="lede">A parent locks the family Windows laptop to Studywork. The student answers real TEKS questions in math, reading, science and social studies, and the games open once they have answered one question correctly in each subject that day.</p>
+            <p>A missed question shows how a similar problem is solved, so the student learns the method and then tries again. Each student has their own progress, and the parent sees it without a login.</p>
+            <div class="cta">
+              <a class="button" href="https://github.com/krishngohel/Studywork-Website/releases/latest/download/Studywork-Setup-x64.exe">Download for Windows</a>
+              <a href="#download">Portable, Mac and tablets</a>
+            </div>
+            <p class="fine">Windows 10 or 11, 64-bit. About 113 MB.</p>
           </div>
-          <div class="privacy-copy">
-            <p>Studywork stores student profiles, progress, and study sessions in a local SQLite database. Internet access is not required for everyday practice.</p>
-            <p>Cloud backup is optional. Parent authentication details are protected by the operating system, and household data is separated with database row-level security.</p>
+          <div class="sheet" aria-label="Example of a missed question and its worked example">
+            <div class="sheet-part mine">
+              <h2>The student's question</h2>
+              <p class="q">A shirt costs $40 and is discounted 25%. What is the sale price in dollars?</p>
+              <p class="withheld">They answer 35. That is wrong, so Studywork does not show 30. It shows a different problem instead.</p>
+            </div>
+            <div class="sheet-part">
+              <h2>A worked example with different numbers</h2>
+              <p class="q">A $60 jacket is discounted 25%. What is the sale price in dollars?</p>
+              <ol>
+                <li>Find the discount first: 25% of $60 is 0.25 &times; 60 = $15.</li>
+                <li>Subtract the discount from the original price: 60 &minus; 15 = 45, so the sale price is $45.</li>
+              </ol>
+              <p class="answer"><span class="tick">Method:</span> find the discount, then subtract it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="lock">
+        <div class="wrap">
+          <h2>What the study lock stops, and what it does not</h2>
+          <div class="cols">
+            <div>
+              <h3>While the lock is on</h3>
+              <ul>
+                <li>Studywork fills the screen and stays in front of other windows.</li>
+                <li>The Windows key, Win+Tab, Alt+Tab, Alt+Esc and Ctrl+Esc do nothing (version 3.23 and newer).</li>
+                <li>If a touchpad swipe, Task View or a minimise moves the window away, it comes back.</li>
+                <li>Closing the window, reloading and developer tools are blocked.</li>
+                <li>Only the parent PIN ends the lock. Five wrong guesses start a wait that doubles each round, up to 15 minutes.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>What it cannot do</h3>
+              <ul>
+                <li>Ctrl+Alt+Del still opens the Windows security screen. No app can block it.</li>
+                <li>It does not stop a student from shutting the laptop down or signing out.</li>
+                <li>It does not lock other Windows accounts on the same laptop.</li>
+                <li>It is not a school-grade lockdown. For one, Windows Assigned Access can limit a laptop to a single app.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section-shell pricing-section" id="pricing">
-        <p class="eyebrow">Pricing</p>
-        <h2>One plan. Everything unlocked.</h2>
-        <div class="price-card">
-          <div class="price"><b>$5</b><span>a month, per household</span></div>
-          <ul>
-            <li>Every Grade 6, 7 and 8 course in Math, ELA, Science and Social Studies</li>
-            <li>All four Game Zone games and the full Battle Grove adventure</li>
-            <li>Cloud backup, study groups and the global leaderboard</li>
-            <li>Every student in your household</li>
-            <li>Cancel any time from the parent dashboard</li>
-          </ul>
-          <p class="price-note">Try it free first: every subject and game mode includes a small sample, no card needed. Subscribe from the parent dashboard inside the app.</p>
-          <a class="button primary" href="#download">Download and try the sample</a>
+      <section id="download">
+        <div class="wrap">
+          <h2>Download</h2>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr><th scope="col">Version</th><th scope="col">Size</th><th scope="col">Notes</th><th scope="col"><span class="visually">Download</span></th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Windows installer</th>
+                  <td class="num">113 MB</td>
+                  <td>Recommended. Updates itself in the background and installs the new version when you close the app.</td>
+                  <td><a class="button" href="https://github.com/krishngohel/Studywork-Website/releases/latest/download/Studywork-Setup-x64.exe">Download</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Windows portable</th>
+                  <td class="num">113 MB</td>
+                  <td>Runs without installing. It cannot update itself, so download it again for each new version.</td>
+                  <td><a class="button plain" href="https://github.com/krishngohel/Studywork-Website/releases/latest/download/Studywork-Portable-x64.exe">Download</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Mac (older build)</th>
+                  <td class="num">230 MB</td>
+                  <td>This is an older version and does not have the lock changes or recent features. It is not signed. A current Mac build is not available yet.</td>
+                  <td><a class="button plain" href="https://github.com/krishngohel/Studywork-Website/releases/latest/download/Studywork-universal.dmg">Download</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">iPad and Android tablets</th>
+                  <td class="num">None</td>
+                  <td>Not available yet.</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="warn">The installers are not code-signed yet, so Windows SmartScreen may warn you. Choose More info, then Run anyway. Download Studywork only from this page.</p>
         </div>
       </section>
 
-      <section class="final-cta section-shell">
-        <p class="eyebrow">Ready to begin?</p>
-        <h2>Turn study time into real progress.</h2>
-        <a class="button primary" href="#download">Download Studywork</a>
+      <section id="pricing">
+        <div class="wrap">
+          <h2>Pricing</h2>
+          <p class="price">$5 a month per household</p>
+          <p>That is the plan for Studywork Family: every course, all the games and every student in the household. Subscriptions are not switched on in the current app, so nothing is charged and everything is open. If that changes, the app will tell you before it asks for anything.</p>
+        </div>
+      </section>
+
+      <section id="privacy">
+        <div class="wrap">
+          <h2>Where the data lives</h2>
+          <p>Student profiles, progress and study sessions are saved on the laptop, in a local database, and practice works with no internet. A parent can also sign in to an account to back up progress and join study groups. The account is optional, and without it a forgotten PIN cannot be reset by email.</p>
+        </div>
       </section>
     </main>
 
     <footer>
-      <div class="section-shell footer-inner">
-        <div><b>Studywork</b><span>Focused TEKS practice for Grades 6–8.</span></div>
-        <p>Studywork is an independent educational product and is not an official Texas Education Agency or school-district product.</p>
+      <div class="wrap">
+        <p>Studywork is an independent product. It is not a Texas Education Agency or school district product.</p>
+        <p><a href="https://github.com/krishngohel/Studywork-Website/releases">All releases and release notes</a></p>
       </div>
     </footer>
   </body>
